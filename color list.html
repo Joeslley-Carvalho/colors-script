@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Cores</title>
+</head>
+<body>
+<ul>
+  <li onclick="copyToClipboard('#FFF689')" style="background-color:#FFF689;">#FFF689</li>
+  <li onclick="copyToClipboard('#F4D35E')" style="background-color:#F4D35E;">#F4D35E</li>
+  <li onclick="copyToClipboard('#FFB88A')" style="background-color:#FFB88A;">#FFB88A</li>
+  <li onclick="copyToClipboard('#FF9C5B')" style="background-color:#FF9C5B;">#FF9C5B</li>
+  <li onclick="copyToClipboard('#F67B45')" style="background-color:#F67B45;">#F67B45</li>
+  <li onclick="copyToClipboard('#FBC2C2')" style="background-color:#FBC2C2;">#FBC2C2</li>
+  <li onclick="copyToClipboard('#E39B99')" style="background-color:#E39B99;">#E39B99</li>
+  <li onclick="copyToClipboard('#CB7876')" style="background-color:#CB7876;">#CB7876</li>
+  <li onclick="copyToClipboard('#B4CFA4')" style="background-color:#B4CFA4;">#B4CFA4</li>
+  <li onclick="copyToClipboard('#8BA47C')" style="background-color:#8BA47C;">#8BA47C</li>
+  <li onclick="copyToClipboard('#62866C')" style="background-color:#62866C;">#62866C</li>
+  <li onclick="copyToClipboard('#A0C5E3')" style="background-color:#A0C5E3;">#A0C5E3</li>
+  <li onclick="copyToClipboard('#81B2D9')" style="background-color:#81B2D9;">#81B2D9</li>
+  <li onclick="copyToClipboard('#32769B')" style="background-color:#32769B;">#32769B</li>
+  <li onclick="copyToClipboard('#BBA6DD')" style="background-color:#BBA6DD;">#BBA6DD</li>
+  <li onclick="copyToClipboard('#8C7DA8')" style="background-color:#8C7DA8;">#8C7DA8</li>
+  <li onclick="copyToClipboard('#64557B')" style="background-color:#64557B;">#64557B</li>
+  <li onclick="copyToClipboard('#1E2136')" style="background-color:#1E2136;">#1E2136</li>
+</ul>
+
+<script>
+  function copyToClipboard(text) {
+    var input = document.createElement('input');
+    input.setAttribute('value', text);
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand('copy');
+    document.body.removeChild(input);
+    alert("Código copiado: " + text);
+  }
+</script>
+</body>
+</html>
